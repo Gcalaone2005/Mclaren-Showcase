@@ -21,12 +21,12 @@ This project is a dynamic, responsive website showcasing McLaren’s most iconic
 ## How to Use
 
 1. Clone the repository or download the files.
-2. Open `index.html` in any modern browser.
+2. Open `mclaren showcase.html` in any modern browser.
 3. Browse the McLaren lineup and click “More Info” to reveal details.
 
 ## Folder Structure
 
-- `index.html` – main webpage
+- `mclaren showcase.html` – main webpage
 - All CSS and JS is written inline or included in the file
 - No installation needed – just run it in your browser
 
@@ -37,4 +37,4 @@ This project is a dynamic, responsive website showcasing McLaren’s most iconic
 
 ## Author
 
-Created by **[Your Name]** – Feel free to fork or contribute.
+Created by **Girish Chavan** – Feel free to fork or contribute.
