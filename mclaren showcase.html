@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McLaren Supercars</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="description" content="Discover McLaren Supercars – explore models, specifications, and experiences on this official showcase website.">
+  <meta name="keywords" content="McLaren, McLaren cars, McLaren supercars, McLaren models, car showcase, McLaren specifications">
+  <meta name="robots" content="index, follow">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav ul li a:hover {
+      color: #ffa726;
+      transition: color 0.3s ease;
+    }
+    section h2 {
+      position: relative;
+      display: inline-block;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background-color: #fb923c;
+      margin: 0.5rem auto 0;
+      border-radius: 9999px;
+    }
+    .car-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(251, 146, 60, 0.4);
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out both;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-black text-orange-500 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">McLaren</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="models.html" class="hover:underline">Models</a></li>
+        <li><a href="#bespoke" class="hover:underline">Bespoke</a></li>
+        <li><a href="#ownership" class="hover:underline">Ownership</a></li>
+        <li><a href="#experiences" class="hover:underline">Experiences</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center text-center fade-in" style="background-image: url('https://www.mclaren.com/media/2626/mclaren720s-banner.jpg');">
+    <div class="bg-black bg-opacity-70 p-8 rounded">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-orange-400 mb-4">Welcome to McLaren</h2>
+      <p class="text-lg md:text-xl text-gray-200">Explore performance, design, and innovation.</p>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section id="models" class="py-16 px-6 fade-in">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-10">Our Models</h2>
+    <div class="text-center">
+      <a href="models.html" class="inline-block bg-orange-500 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 transition duration-300">View All Models</a>
+    </div>
+  </section>
+
+  <!-- Bespoke Section -->
+  <section id="bespoke" class="bg-gray-800 py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-orange-400 text-center mb-6">Bespoke Creations</h2>
+    <p class="text-center max-w-3xl mx-auto text-gray-300">McLaren Special Operations offers bespoke design options to create a car that's uniquely yours. Choose colors, materials, and enhancements to match your vision.</p>
+  </section>
+
+  <!-- Ownership Section -->
+  <section id="ownership" class="py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-orange-400 text-center mb-6">Ownership Experience</h2>
+    <ul class="max-w-2xl mx-auto space-y-4 text-gray-300">
+      <li><strong>Warranty:</strong> Comprehensive coverage plans.</li>
+      <li><strong>Genuine Parts:</strong> Ensure your McLaren remains authentic.</li>
+      <li><strong>Maintenance:</strong> Performance-optimized care and inspections.</li>
+    </ul>
+  </section>
+
+  <!-- Experiences Section -->
+  <section id="experiences" class="bg-gray-800 py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-orange-400 text-center mb-6">Experiences</h2>
+    <p class="text-center max-w-3xl mx-auto text-gray-300">Join the world of McLaren events – from VIP driving events to track days, McLaren owners enjoy unparalleled experiences.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-gray-500 py-4">
+    © <span id="year"></span> McLaren Showcase. All rights reserved.
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('#year').text(new Date().getFullYear());
+    });
+  </script>
+</body>
+</html>
