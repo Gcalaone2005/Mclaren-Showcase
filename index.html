@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McLaren Supercar Showcase</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #000;
+      color: #fff;
+    }
+    nav ul li a:hover {
+      color: #ffa726;
+      transition: color 0.3s ease;
+    }
+    section h2 {
+      position: relative;
+      display: inline-block;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background-color: #fb923c;
+      margin: 0.5rem auto 0;
+      border-radius: 9999px;
+    }
+    footer {
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-black text-orange-500 p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">McLaren</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="models.html" class="hover:underline">Models</a></li>
+        <li><a href="#bespoke" class="hover:underline">Bespoke</a></li>
+        <li><a href="#ownership" class="hover:underline">Ownership</a></li>
+        <li><a href="#experiences" class="hover:underline">Experiences</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center text-center" style="background-image: url('https://www.mclaren.com/media/2626/mclaren720s-banner.jpg');">
+    <div class="bg-black bg-opacity-70 p-8 rounded">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-orange-400 mb-4">Welcome to McLaren</h2>
+      <p class="text-lg md:text-xl text-gray-200">Explore performance, design, and innovation.</p>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section id="models" class="py-16 px-6">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-10">Our Models</h2>
+    <div id="models-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="car-card bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-2xl text-orange-400">McLaren 540C</h3>
+        <img src="https://images.hgmsites.net/hug/mclaren-540c_100547439_h.jpg" alt="McLaren 540C" class="w-full h-auto rounded-lg">
+        <a href="mclaren_540c.html" class="inline-block bg-orange-500 text-white font-bold px-4 py-2 rounded mt-2">View Details</a>
+      </div>
+      <div class="car-card bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-2xl text-orange-400">McLaren 570S</h3>
+        <img src="https://hdqwalls.com/download/mclaren-570s-spider-2018-front-1920x1080.jpg" alt="McLaren 570S" class="w-full h-auto rounded-lg">
+        <a href="mclaren_570s.html" class="inline-block bg-orange-500 text-white font-bold px-4 py-2 rounded mt-2">View Details</a>
+      </div>
+      <div class="car-card bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-2xl text-orange-400">McLaren 600LT</h3>
+        <img src="https://cdn.motor1.com/images/mgl/Bb7AK/s1/mclaren-600lt.jpg" alt="McLaren 600LT" class="w-full h-auto rounded-lg">
+        <a href="mclaren_600lt.html" class="inline-block bg-orange-500 text-white font-bold px-4 py-2 rounded mt-2">View Details</a>
+      </div>
+      <div class="car-card bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-2xl text-orange-400">McLaren 620R</h3>
+        <img src="https://files.porsche.com/filestore/image/multimedia/none/rd-2020-mclaren-620r/normal/fd103cf1-e243-11ea-80c9-005056bbdc38;sS;twebp/porsche-normal.webp" alt="McLaren 620R" class="w-full h-auto rounded-lg">
+        <a href="mclaren_620r.html" class="inline-block bg-orange-500 text-white font-bold px-4 py-2 rounded mt-2">View Details</a>
+      </div>
+      <div class="car-card bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-2xl text-orange-400">McLaren Artura</h3>
+        <img src="https://www.autocar.co.uk/car-review/mclaren/artura" alt="McLaren Artura" class="w-full h-auto rounded-lg">
+        <a href="mclaren_artura.html" class="inline-block bg-orange-500 text-white font-bold px-4 py-2 rounded mt-2">View Details</a>
+      </div>
+      <div class="car-card bg-gray-800 p-4 rounded-lg">
+        <h3 class="text-2xl text-orange-400">McLaren P1</h3>
+        <img src="https://www.hdcarwallpapers.com/2017_mclaren_p1_5th_anniversary_4k_2-wallpapers.html" alt="McLaren P1" class="w-full h-auto rounded-lg">
+        <a href="mclaren_p1.html" class="inline-block bg-orange-500 text-white font-bold px-4 py-2 rounded mt-2">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-gray-500 py-4">
+    <p>© 2025 McLaren Showcase. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="text-orange-500 hover:underline">Instagram</a>
+      <a href="#" class="text-orange-500 hover:underline">GitHub</a>
+      <a href="#" class="text-orange-500 hover:underline">Facebook</a>
+      <a href="#" class="text-orange-500 hover:underline">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('#year').text(new Date().getFullYear());
+    });
+  </script>
+</body>
+</html>
