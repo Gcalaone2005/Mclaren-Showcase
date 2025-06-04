@@ -4,23 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>McLaren 600LT</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
+      font-family: 'Orbitron', sans-serif;
+      scroll-behavior: smooth;
       background-color: #000;
       color: #fff;
-      font-family: 'Orbitron', sans-serif;
+    }
+    nav ul li a:hover {
+      color: #ffa726;
+      transition: color 0.3s ease;
+    }
+    section h2 {
+      position: relative;
+      display: inline-block;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background-color: #fb923c;
+      margin: 0.5rem auto 0;
+      border-radius: 9999px;
+    }
+    footer {
+      font-size: 0.875rem;
     }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="bg-black text-orange-500 p-4 shadow-lg sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">McLaren 600LT</h1>
+      <h1 class="text-2xl font-bold">McLaren</h1>
       <ul class="flex space-x-4">
-        <li><a href="index.html" class="hover:underline">Home</a></li>
-        <li><a href="models.html" class="hover:underline">Models</a></li>
+    <li><a href="home.html" class="hover:underline">Home</a></li>
+        <li><a href="about_us.html" class="hover:underline">About Us</a></li>
+        <li><a href="contact_us.html" class="hover:underline">Contact Us</a></li>
       </ul>
     </div>
   </nav>
